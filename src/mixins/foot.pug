@@ -1,0 +1,12 @@
+mixin foot(description, author)
+  section#footer
+    .container
+      .row
+        .col-md-12.text-center
+          p 
+            span= description 
+            |  | 
+            span <script>var f = new Date(); document.write(f.getFullYear());</script>
+            |  | 
+            span
+              a.btn-link(href="https://coredeiv.github.io/portfolio/")= author

@@ -12,13 +12,61 @@ html {
   // font-family: 'Comfortaa', cursive;
   // font-family: 'Marcellus', serif;
   width: 100%;
-  height: auto;
+  // height: auto;
   min-height: 100vh;
-  overflow-x: hidden;
+  // overflow-x: hidden;
+}
+
+// Variables
+$main-color: #820139;
+$second-color: #373737;
+$menu-color: #56a3a6;
+$header-color: #e1efe6;
+$charger-color: #0d1b2a;
+
+.text-main {
+  color: $main-color;
+}
+
+.bg-main {
+  background: $main-color;
+}
+
+.text-second {
+  color: $second-color;
+}
+
+.bg-menu {
+  background: $menu-color;
+}
+
+.bg-header {
+  background: $header-color;
+}
+
+.bg-charger {
+  background: $charger-color;
+}
+
+.btn-main {
+  background: $main-color;
+  border-radius: 0;
+  color: #fff;
+  padding: 10px 30px !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  &:hover {
+    background: #5d0028;
+    color: #fff;
+  }
 }
 
 #wrap-wrap {
-  padding: 75px;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  // padding: 75px;
+  border: 50px solid #fff;
   position: relative;
   @extend body, html
 }

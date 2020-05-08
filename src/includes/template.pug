@@ -1,0 +1,54 @@
+include ../mixins/foot.pug
+include ../mixins/buttons.pug
+<!DOCTYPE html>
+html
+  head
+    title
+      block title
+    meta(charset="utf-8")/
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")/
+    meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")/
+    meta(name="author" content="jftorresh")/
+    meta(name="robots" content="all")/
+    meta(name="keywords" content="Portfolio, Portafolio, Jorge, Fernando, Torres, Holguin, Architecture, Arquitectura, inclusion, Social, Design")/
+    meta(name="description" content="Jorge Torres | Portolio Web")/
+    meta(name="twitter:card" content="summary_large_image")/
+    //- meta(name="twitter:site" content=" ")/
+    //- meta(name="twitter:title" content="David Torres | Portolio Web")/
+    //- meta(name="twitter:description" content="David Torres | Portfolio Web")/
+    //- meta(name="twitter:creator" content="@Voltage_Code")/
+    //- meta(name="twitter:image:src" content="/media/logo/logo.png")/
+    meta(property="og:title" content="Jorge Torres | Portfolio")/
+    meta(property="og:type" content="article")/
+    meta(property="og:url" content="jftorresh.github.io/portfolio/")/
+    meta(property="og:image" content="./dist/media/logo/logo-positivo.png")/
+    meta(property="og:description" content="David Torres | Portfolio Web")/
+    meta(property="og:site_name" content="David Torres | Portfolio Web")/
+    link(rel="shorcut icon" type="image/png" href="./dist/media/logo/logo-positivo.png")/
+    //- Online Libraries
+    //- link(href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet")/
+    //- link(href="https://coredeiv.github.io/bootstraplus/css/bootstraplus.min.css" rel="stylesheet")/
+    //- Offline Libraries
+    link(href="./dist/css/bootstrap.min.css" rel="stylesheet")/
+    link(href="./dist/css/bootstraplus.min.css" rel="stylesheet")/
+    //- link(href="./dist/css/fontawesome.min.css" rel="stylesheet")/
+    link(href="./dist/css/styles.css" rel="stylesheet")/
+  body
+
+    #wrap-wrap
+      header
+        include ./header.pug
+      main
+        block main_content
+      
+    //- include ../includes/footer.pug
+      
+    //- Online Libraries
+    //- script(src="https://code.jquery.com/jquery-3.4.0.min.js")
+    //- script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js")
+    script(src="https://kit.fontawesome.com/25f07c253e.js")
+    //- Ofline Libraries
+    script(src="./dist/js/jquery-3.4.1.min.js")
+    script(src="./dist/js/bootstrap.min.js")
+    //- script(src="./dist/js/fontawesome.min.js")
+    script(src="./dist/js/scripts.js")

@@ -1,0 +1,21 @@
+extends ../includes/template.pug
+prepend title
+  | Portafolio | Jorge Torres
+block main_content
+  section#main-banner
+    .container-fluid
+      .row.ai-center.h-100
+        .offset-md-2.col-md-4
+          h1 Lorem ipsum, dolor
+          p Similique hic dolores nobis voluptas consequatur fugit quas saepe repellendus.
+          +btnMain(
+            "#",
+            "Explorar Proyecto"
+          )
+        .col-md-4
+          img.img.img-fluid.of-cover(src="./dist/media/img/project-1.jpg")
+//- block foot
+//-   +foot(
+//-     "Todos los derechos reservados",
+//-     "coreDeiv"
+//-   )
