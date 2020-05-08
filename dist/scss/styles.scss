@@ -12,9 +12,7 @@ html {
   // font-family: 'Comfortaa', cursive;
   // font-family: 'Marcellus', serif;
   width: 100%;
-  // height: auto;
   min-height: 100vh;
-  // overflow-x: hidden;
 }
 
 // Variables
@@ -62,13 +60,16 @@ $charger-color: #0d1b2a;
 }
 
 #wrap-wrap {
+  @media (max-width: 578px) {
+    border: 15px solid #fff !important;
+    height: auto !important;
+    overflow: visible;
+  }
   width: 100%;
   height: 100vh;
-  overflow: hidden;
-  // padding: 75px;
+  overflow-x: hidden;
   border: 50px solid #fff;
   position: relative;
-  @extend body, html
 }
 
 h1, h2, h3, h4, h5, h6 {
