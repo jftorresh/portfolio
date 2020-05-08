@@ -89,4 +89,54 @@ p {
 .col-xl-9, .col-xl-auto {
   padding-left: 5px !important;
   padding-right: 5px !important;
+  @media (max-width: 578px) {
+    padding: 15px;
+    margin: 15px;
+  }
+}
+
+.carousel {
+  .carousel-inner {
+    .carousel-item {
+      transition: transform 2s ease, opacity .5s ease-out;
+    }
+  }
+  .carousel-indicators {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -15%);
+    display: block;
+    @media (max-width: 578px) {
+      display: flex !important;
+      justify-content: space-between;
+      top: 0 !important;
+      left: 0 !important;
+      transform: translate(0px, -75px) !important;
+    }
+    li {
+      position: relative;
+      border-radius: 50%;
+      border: 1px solid #999;
+      margin: 30px 0;
+      display: block !important;
+      width: 25px !important;
+      height: 25px !important;
+      transition: ease .5s;
+      &::after {
+        content: '';
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #000;
+        width: 2px;
+        height: 2px;
+        color: #000;
+      }
+      &:hover {
+        border: 1px solid #000;
+      }
+    }
+  }
 }

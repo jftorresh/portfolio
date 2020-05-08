@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstraplus | Carousel</title>
+    <meta charset='utf-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' />
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet' />
+    <link href='https://coredeiv.github.io/bootstraplus/css/bootstraplus.min.css' rel='stylesheet' />
+    <link rel='stylesheet' href='./dist/css/styles.css' />
+    <style>
+      body {
+        padding: 75px;
+      }
+      @media screen and (max-width: 578px) {
+        body {
+          padding: 25px;
+        }
+        .carousel-indicators {
+          display: flex !important;
+          justify-content: space-between;
+          top: 0 !important;
+          left: 0 !important;
+          transform: translate(0px, -75px) !important;
+        }
+      }
+      .carousel-indicators {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -15%);
+        display: block;
+      }
+      .carousel-indicators li {
+        position: relative;
+        border-radius: 50%;
+        border: 1px solid #999;
+        margin: 30px 0;
+        display: block !important;
+        width: 25px !important;
+        height: 25px !important;
+        transition: ease .5s;
+      }
+      .carousel-indicators li:after {
+        content: '';
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #000;
+        width: 2px;
+        height: 2px;
+        color: #000;
+      }
+      .carousel-indicators li:hover {
+        border: 1px solid #000;
+      }
+      .carousel-item {
+        transition: transform 2s ease, opacity .5s ease-out;
+      }
+    </style>
+  </head>
+  <body class="bg-light overflow-x-hidden">
+    
+    <div id="carouselProjects" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="row">
+        <div class="col-md-10">
+      
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">          
+              <div class="row ai-center">
+                <div class="offset-md-2 col-md-4">
+                  <span class="text-uppercase ls-4">label</span>
+                  <div class="sub"></div>
+                  <h1 class="">Lorem, ipsum dolor.</h1>
+                  <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste placeat quisquam illum impedit excepturi incidunt!</p>
+                  <a href="#" class="btn btn-main">Explorar Proyecto</a>
+                </div>
+                <div class="col-md-6">
+                  <img src="./dist/media/img/project-1.jpg" alt="#" class="img img-fluid w-100" style="height: 70vh;">
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">          
+              <div class="row ai-center">
+                <div class="offset-md-2 col-md-4">
+                  <span class="text-uppercase ls-4">label</span>
+                  <div class="sub"></div>
+                  <h1 class="">Lorem, ipsum dolor.</h1>
+                  <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste placeat quisquam illum impedit excepturi incidunt!</p>
+                  <a href="#" class="btn btn-main">Explorar Proyecto</a>
+                </div>
+                <div class="col-md-6">
+                  <img src="./dist/media/img/ui-projects-slider-2.jpg" alt="#" class="img img-fluid w-100" style="height: 70vh;">
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">          
+              <div class="row ai-center">
+                <div class="offset-md-2 col-md-4">
+                  <span class="text-uppercase ls-4">label</span>
+                  <div class="sub"></div>
+                  <h1 class="">Lorem, ipsum dolor.</h1>
+                  <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste placeat quisquam illum impedit excepturi incidunt!</p>
+                  <a href="#" class="btn btn-main">Explorar Proyecto</a>
+                </div>
+                <div class="col-md-6">
+                  <img src="./dist/media/img/ui-projects-slider-3.jpg" alt="#" class="img img-fluid w-100" style="height: 70vh;">
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+        <div class="col-md-1">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselProjects" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselProjects" data-slide-to="1"></li>
+            <li data-target="#carouselProjects" data-slide-to="2"></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    
+    <script src='https://code.jquery.com/jquery-3.4.0.min.js'></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+    <script src='https://kit.fontawesome.com/25f07c253e.js'></script>
+    <script src='js/scripts.js'></script>
+  </body>
+</html>

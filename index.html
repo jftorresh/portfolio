@@ -30,12 +30,50 @@
       <main>
         <section id="main-banner">
           <div class="container-fluid">
-            <div class="row ai-center h-100">
-              <div class="offset-md-2 col-md-4">
-                <h1>Lorem ipsum, dolor</h1>
-                <p>Similique hic dolores nobis voluptas consequatur fugit quas saepe repellendus.</p><a class="btn btn-main" href="#">Explorar Proyecto</a>
+            <div class="carousel slide carousel-fade" id="carouselProjects" data-ride="carousel">
+              <div class="row">
+                <div class="col-md-10">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="row ai-center">
+                        <div class="offset-md-2 col-md-4"><span class="text-uppercase ls-4">Media</span>
+                          <div class="sub"></div>
+                          <h1>Este es un titulo</h1>
+                          <p>Pellentesque nec malesuada nunc. Curabitur nec cursus eros, eget aliquet metus. Maecenas facilisis sem sed interdum eleifend.</p><a class="btn btn-main" href="#">Explorar Proyecto</a>
+                        </div>
+                        <div class="col-md-6"><img class="img img-fluid w-100 vh-80-important" src="./dist/media/img/project-1.jpg"/></div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="row ai-center">
+                        <div class="offset-md-2 col-md-4"><span class="text-uppercase ls-4">Music</span>
+                          <div class="sub"></div>
+                          <h1>Este es otro titulo</h1>
+                          <p>Pellentesque nec malesuada nunc. Curabitur nec cursus eros, eget aliquet metus. Maecenas facilisis sem sed interdum eleifend.</p><a class="btn btn-main" href="#">Explorar Proyecto</a>
+                        </div>
+                        <div class="col-md-6"><img class="img img-fluid w-100 vh-80-important" src="./dist/media/img/ui-projects-slider-2.jpg"/></div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="row ai-center">
+                        <div class="offset-md-2 col-md-4"><span class="text-uppercase ls-4">Video</span>
+                          <div class="sub"></div>
+                          <h1>Este es el titulo del video</h1>
+                          <p>Ya no se que poner aca, solo se que este es un texto, para el item del carousel, correspondiente a video</p><a class="btn btn-main" href="#">Explorar Proyecto</a>
+                        </div>
+                        <div class="col-md-6"><img class="img img-fluid w-100 vh-80-important" src="./dist/media/img/ui-projects-slider-3.jpg"/></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-1">
+                  <div class="carousel-indicators">
+                    <li class="active" data-target="#carouselProjects" data-slide-to="0"></li>
+                    <li data-target="#carouselProjects" data-slide-to="1"></li>
+                    <li data-target="#carouselProjects" data-slide-to="2"></li>
+                  </div>
+                </div>
               </div>
-              <div class="col-md-4"><img class="img img-fluid of-cover" src="./dist/media/img/project-1.jpg"/></div>
             </div>
           </div>
         </section>

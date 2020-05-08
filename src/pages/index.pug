@@ -4,16 +4,36 @@ prepend title
 block main_content
   section#main-banner
     .container-fluid
-      .row.ai-center.h-100
-        .offset-md-2.col-md-4
-          h1 Lorem ipsum, dolor
-          p Similique hic dolores nobis voluptas consequatur fugit quas saepe repellendus.
-          +btnMain(
-            "#",
-            "Explorar Proyecto"
-          )
-        .col-md-4
-          img.img.img-fluid.of-cover(src="./dist/media/img/project-1.jpg")
+      #carouselProjects.carousel.slide.carousel-fade(data-ride="carousel")
+        .row
+          .col-md-10
+            .carousel-inner
+              +carouselItem-active(
+                "Media",
+                "Este es un titulo",
+                "Pellentesque nec malesuada nunc. Curabitur nec cursus eros, eget aliquet metus. Maecenas facilisis sem sed interdum eleifend.",
+                "#",
+                "project-1.jpg"
+              )
+              +carouselItem(
+                "Music",
+                "Este es otro titulo",
+                "Pellentesque nec malesuada nunc. Curabitur nec cursus eros, eget aliquet metus. Maecenas facilisis sem sed interdum eleifend.",
+                "#",
+                "ui-projects-slider-2.jpg"
+              )
+              +carouselItem(
+                "Video",
+                "Este es el titulo del video",
+                "Ya no se que poner aca, solo se que este es un texto, para el item del carousel, correspondiente a video",
+                "#",
+                "ui-projects-slider-3.jpg"
+              )
+          .col-md-1
+            .carousel-indicators
+              +carouselIndicator-active("0")
+              +carouselIndicator("1")
+              +carouselIndicator("2")
 //- block foot
 //-   +foot(
 //-     "Todos los derechos reservados",
