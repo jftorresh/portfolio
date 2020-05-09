@@ -42,6 +42,10 @@ $charger-color: #0d1b2a;
   background: $header-color;
 }
 
+.text-header {
+  color: $header-color;
+}
+
 .bg-charger {
   background: $charger-color;
 }
@@ -72,7 +76,7 @@ $charger-color: #0d1b2a;
   position: relative;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, li.link-item a {
   font-family: 'Marcellus', serif;
 }
 
@@ -139,5 +143,114 @@ p {
         border: 1px solid #000;
       }
     }
+  }
+}
+
+.menu {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 0vh;
+  overflow: hidden;
+  transition: ease .7s;
+  z-index: 500;
+  &.active {
+    top: 0%;
+    height: 100vh;
+    overflow: visible;
+    @media (max-width: 768px) {
+      height: 100% !important;
+      overflow: scroll !important;
+    }
+    @extend .bg-menu;
+    .header {
+      .container-fluid {
+        padding: 75px;
+        @media (max-width: 578px) {
+          padding: 15px;
+        }
+      }
+    }
+    .menu-items {
+      .row {
+        padding: 0 75px 75px 75px;
+        @media (max-width: 578px) {
+          padding: 15px;
+        }
+        .list-lnks {
+          li.link-item {
+            padding: 15px 0px;
+            transition: ease .5s !important;
+            @media (max-width: 578px) {
+              padding: 5px 0;
+            }
+            > a {
+              position: relative;
+              text-decoration: none;
+              color: $header-color !important;
+              font-size: 2rem;
+              transition: ease .5s;
+              @media (max-width: 578px) {
+                font-size: 1.2rem;
+              }
+              @extend li.link-item;
+              &.active {
+                border-bottom: 1px solid $header-color;
+              }
+              &::after {
+                content: ' ';;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: (-50%, 0);
+                width: 0px;
+                transition: ease .5s;
+              }
+              &::before {
+                content: ' ';;
+                position: absolute;
+                bottom: 0;
+                right: 50%;
+                transform: (0, -50%);
+                width: 0px;
+                transition: ease .5s;
+              }
+              &:hover::after {
+                content: ' ';
+                position: absolute;
+                width: 100px;
+                border: 1px solid #fff;
+                @media (max-width: 578px) {
+                  width: 50px;
+                }
+              }
+              &:hover::before {
+                content: ' ';
+                position: absolute;
+                width: 100px;
+                border: 1px solid #fff;
+                @media (max-width: 578px) {
+                  width: 50px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.sub {
+  width: 75px;
+  height: 1px;
+  &-light {
+    @extend .sub;
+    background: $header-color;
+  }
+  &-dark {
+    @extend .sub;
+    background: $second-color;
   }
 }
