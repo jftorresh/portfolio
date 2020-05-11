@@ -254,3 +254,85 @@ p {
     background: $second-color;
   }
 }
+
+#wrap-wrap {
+  .bars-open {
+    width: 50px;
+    height: auto;
+    /* background: #ccc; */
+    padding: 15px 0px;
+    div {
+      width: 50px;
+      height: 3px;
+      background: #000;
+      border: 1px solid #000;
+      border-radius: 40px;
+      margin-top: 7.5px;
+      transition: ease .2s;
+      &:nth-child(1) {
+        margin-top: 0;
+        margin-left: 15px;
+        width: 35px;
+      }
+      &:nth-child(2) {
+        margin-left: 30px;
+        width: 20px;
+        transition-delay: .1s;
+      }
+      &:nth-child(3) {
+        margin-left: 10px;
+        width: 40px;
+        transition-delay: .2s !important;
+      }
+    }
+    &:hover {
+      div {
+        &:nth-child(1) {
+          margin-top: 0;
+          margin-left: 0;
+          width: 40px;
+        }
+        &:nth-child(2) {
+          margin-left: 0;
+          width: 28px;
+        }
+        &:nth-child(3) {
+          margin-left: 0;
+          width: 16px;
+        }
+      }
+    }
+  }
+  .bars-close {
+    width: 50px;
+    height: auto;
+    /* background: #ccc; */
+    padding: 15px 0px;
+    div {
+      width: 50px;
+      height: 3px;
+      background: #fff;
+      border: 1px solid #fff;
+      border-radius: 40px;
+      line-height: 0;
+      position: absolute;
+      transition: ease-in-out .3s all;
+      &:nth-child(1) {
+        transform: rotate(25deg);
+      }
+      &:nth-child(2) {
+        transform: rotate(-25deg);
+      }
+    }
+    &:hover {
+      div {
+        &:nth-child(1) {
+          transform: rotate(35deg);
+        }
+        &:nth-child(2) {
+          transform: rotate(-35deg);
+        }
+      }
+    }
+  }
+}
