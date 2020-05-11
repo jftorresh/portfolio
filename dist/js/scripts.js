@@ -30,3 +30,23 @@ Pace.on('done', function () {
     top: '-1000'
   }, 4000, $.bez([0.19, 1, 0.22, 1]));
 });
+
+// Img Charge - redifine absolute
+$("img").each(function() {
+  $(this).attr("data-src",$(this).attr("src"));
+
+  // Se remueve el atributo para pruebas en local
+  // $(this).removeAttr("src");
+
+  console.log($(this)[0].outerHTML);
+});
+
+// function for added lazyload class, for all img's in the DOM
+function addLazyLoad() {
+  var lazyLoad = document.querySelectorAll("img");
+  for (var i = 0; i > lazyLoad.length; i++)
+    lazyLoad[i].className += " lazyload";
+}
+
+// Run Lazyload
+addLazyLoad();
