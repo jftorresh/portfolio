@@ -263,4 +263,55 @@ p {
   #wrap-wrap .bars-close:hover div:nth-child(2) {
     transform: rotate(-35deg); }
 
+body .pace {
+  pointer-events: none;
+  user-select: none;
+  z-index: 1001;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 400px;
+  border: 0px;
+  height: 1px;
+  overflow: hidden;
+  background: #0d1b2a;
+  /* background-color: linear-gradient(90deg, rgba(13, 27, 42, .9), rgba(13, 27, 42, .9)); */
+  /* background-image: url("/dist/media/photos/person.jpg"); */
+  /* background-position: 100% 100%; */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */ }
+  @media (max-width: 578px) {
+    body .pace {
+      width: 200px; } }
+  body .pace .pace-progress {
+    box-sizing: border-box;
+    transform: translate3d(0, 0, 0);
+    max-width: 400px;
+    position: absolute;
+    z-index: 1001;
+    display: block;
+    top: 0;
+    right: 100%;
+    height: 100%;
+    width: 100%;
+    background: #e1efe6; }
+  body .pace.pace-inactive {
+    display: none; }
+body #preloader {
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  background: #0d1b2a;
+  /* background-color: linear-gradient(90deg, rgba(13, 27, 42, .9), rgba(13, 27, 42, .9)); */
+  /* background-image: url("/dist/media/photos/person.jpg"); */
+  /* background-position: 100% 100%; */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */ }
+
 /*# sourceMappingURL=styles.css.map */

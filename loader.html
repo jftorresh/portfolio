@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portafolio | Jorge Torres
+    </title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="author" content="jftorresh"/>
+    <meta name="robots" content="all"/>
+    <meta name="keywords" content="Portfolio, Portafolio, Jorge, Fernando, Torres, Holguin, Architecture, Arquitectura, inclusion, Social, Design"/>
+    <meta name="description" content="Jorge Torres | Portolio Web"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta property="og:title" content="Jorge Torres | Portfolio"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="jftorresh.github.io/portfolio/"/>
+    <meta property="og:image" content="./dist/media/logo/logo-positivo.png"/>
+    <meta property="og:description" content="David Torres | Portfolio Web"/>
+    <meta property="og:site_name" content="David Torres | Portfolio Web"/>
+    <link rel="shorcut icon" type="image/png" href="./dist/media/logo/logo-positivo.png"/>
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="./dist/css/bootstraplus.min.css" rel="stylesheet"/>
+    <link href="./dist/css/styles.css" rel="stylesheet"/>
+    <style>
+      .pace {
+        pointer-events: none;
+        user-select: none;
+        z-index: 1001;
+        position: fixed;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 400px;
+        border: 0px;
+        height: 1px;
+        overflow: hidden;
+        background: rgba(13, 27, 42, 1);
+        /* background-color: linear-gradient(90deg, rgba(13, 27, 42, .9), rgba(13, 27, 42, .9)); */
+        /* background-image: url("/dist/media/photos/person.jpg"); */
+        /* background-position: 100% 100%; */
+        /* background-size: cover; */
+        /* background-repeat: no-repeat; */
+      }
+      .pace .pace-progress {
+        box-sizing: border-box;
+        transform: translate3d(0,0,0);
+        max-width: 400px;
+        position: absolute;
+        z-index: 1001;
+        display: block;
+        top: 0;
+        right: 100%;
+        height: 100%;
+        width: 100%;
+        background: #e1efe6;
+      }
+      @media screen and (max-width: 578px) {
+        .pace  {
+          width: 200px;
+        }
+      }
+      .pace.pace-inactive {
+        display: none;
+      }
+      #preloader {
+        z-index: 1000;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: fixed;
+        transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+        background: rgba(13, 27, 42, 1);
+        /* background-color: linear-gradient(90deg, rgba(13, 27, 42, .9), rgba(13, 27, 42, .9)); */
+        /* background-image: url("/dist/media/photos/person.jpg"); */
+        /* background-position: 100% 100%; */
+        /* background-size: cover; */
+        /* background-repeat: no-repeat; */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="preloader" class="d-flex jc-center ai-center w-100 vh-100 overflow-hidden">
+      <div class="text-center">
+        <img src="./dist/media/logo/logo-negativo-png.png" class="img img-fluid w-25">
+        <div class="loader mt-50"></div>
+      </div>
+    </div>
+    <div id="wrap-wrap">
+      <div class="menu bg-menu" id="menu">
+        <div class="header">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12 jc-between">
+                <nav class="navbar navbar-dark w-100 d-flex jc-between" id="header">
+                  <a href="https://jftorresh.github.io/portfolio/">
+                    <img class="img img-fluid" src="./dist/media/logo/logo-negativo-png.png" style="width: 50px;"/>
+                  </a>
+                  <a href="#" id="close-menu">
+                    <div class="bars-close">
+                      <div></div>
+                      <div></div>
+                    </div>
+                  </a>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-items">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col m-auto text-center">
+                <ul class="list-unstyled list-lnks">
+                  <li class="link-item"><a href="#">Inicio</a></li>
+                  <li class="link-item"><a href="#">Proyectos</a></li>
+                  <li class="link-item"><a href="#">Acerca de</a></li>
+                  <li class="link-item"><a href="#">Contactame</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="row text-header">
+              <div class="col-md-12 col-lg-10 m-auto">
+                <div class="row">
+                  <div class="offset-lg-1 col-md-4">
+                    <h5>Lorem Ipsum</h5>
+                    <div class="sub-light"></div>
+                    <ul class="list-unstyled text-left pt-4">
+                      <li>perspiciatis rerum rerum</li>
+                      <li>et consequatur sit</li>
+                      <li>est repudiandae enim</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4">
+                    <h5>Dolor sit</h5>
+                    <div class="sub-light"></div>
+                    <ul class="list-unstyled text-left pt-4">
+                      <li>harum voluptatem ex</li>
+                      <li>quod consequuntur pariatur</li>
+                      <li>enim veritatis magnam</li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-3 col-md-4">
+                    <h5>Amet Consectetur</h5>
+                    <div class="sub-light"></div>
+                    <ul class="list-unstyled text-left pt-4">
+                      <li>minima vero et</li>
+                      <li>quia dolorum commodi</li>
+                      <li>possimus ut magni</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <header>
+        <nav class="navbar navbar-dark w-100 d-flex jc-between" id="header">
+          <a href="https://jftorresh.github.io/portfolio/">
+            <img class="img img-fluid" src="./dist/media/logo/logo-positivo-png.png" style="width: 50px"/>
+          </a>
+          <a href="#" id="open-menu">
+            <div class="bars-open">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </a>
+        </nav>
+      </header>
+      <main>
+        <section id="main-banner">
+          <div class="container-fluid">
+            <div class="carousel slide carousel-fade" id="carouselProjects" data-ride="carousel">
+              <div class="row">
+                <div class="col-md-10">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="row ai-center">
+                        <div class="offset-md-2 col-md-4"><span class="text-uppercase ls-4">Media</span>
+                          <div class="sub-dark"></div>
+                          <h1>Este es un titulo</h1>
+                          <p>Pellentesque nec malesuada nunc. Curabitur nec cursus eros, eget aliquet metus. Maecenas facilisis sem sed interdum eleifend.</p><a class="btn btn-main" href="#">Explorar Proyecto</a>
+                        </div>
+                        <div class="col-md-6"><img class="img img-fluid w-100 vh-80-important" src="./dist/media/img/project-1.jpg"/></div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="row ai-center">
+                        <div class="offset-md-2 col-md-4"><span class="text-uppercase ls-4">Music</span>
+                          <div class="sub-dark"></div>
+                          <h1>Este es otro titulo</h1>
+                          <p>Pellentesque nec malesuada nunc. Curabitur nec cursus eros, eget aliquet metus. Maecenas facilisis sem sed interdum eleifend.</p><a class="btn btn-main" href="#">Explorar Proyecto</a>
+                        </div>
+                        <div class="col-md-6"><img class="img img-fluid w-100 vh-80-important" src="./dist/media/img/ui-projects-slider-2.jpg"/></div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="row ai-center">
+                        <div class="offset-md-2 col-md-4"><span class="text-uppercase ls-4">Video</span>
+                          <div class="sub-dark"></div>
+                          <h1>Este es el titulo del video</h1>
+                          <p>Ya no se que poner aca, solo se que este es un texto, para el item del carousel, correspondiente a video</p><a class="btn btn-main" href="#">Explorar Proyecto</a>
+                        </div>
+                        <div class="col-md-6"><img class="img img-fluid w-100 vh-80-important" src="./dist/media/img/ui-projects-slider-3.jpg"/></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-1">
+                  <div class="carousel-indicators">
+                    <li class="active" data-target="#carouselProjects" data-slide-to="0"></li>
+                    <li data-target="#carouselProjects" data-slide-to="1"></li>
+                    <li data-target="#carouselProjects" data-slide-to="2"></li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="https://kit.fontawesome.com/25f07c253e.js"></script>
+    <script src="./dist/js/jquery-3.4.1.min.js"></script>
+    <script src="./dist/js/jquery.bez.min.js"></script>
+    <script src="./dist/js/bootstrap.min.js"></script>
+    <script src="./dist/js/pace.min.js"></script>
+    <script src="./dist/js/scripts.js"></script>
+    <script>
+
+      paceOptions = {
+        ajax: true,
+        document: true,
+        eventLag: false
+      };
+
+      Pace.on('done', function () {
+        $('loader').delay(500).animate({
+          top: '30%',
+          opacity: '0'
+        }, 2000, $.bez([0.19, 1, 0.22, 1]));
+
+        $("#preloader").delay(500).animate({
+          top: '-1000'
+        }, 4000, $.bez([0.19, 1, 0.22, 1]));
+      });
+
+    </script>
+  </body>
+</html>
