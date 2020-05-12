@@ -84,21 +84,21 @@ p {
   font-family: 'Comfortaa', cursive;
 }
 
-.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, 
-.col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, 
-.col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, 
-.col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, 
-.col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, 
-.col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, 
-.col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, 
-.col-xl-9, .col-xl-auto {
-  padding-left: 5px !important;
-  padding-right: 5px !important;
-  @media (max-width: 578px) {
-    padding: 15px;
-    margin: 15px;
-  }
-}
+// .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, 
+// .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, 
+// .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, 
+// .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, 
+// .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, 
+// .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, 
+// .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, 
+// .col-xl-9, .col-xl-auto {
+//   padding-left: 5px !important;
+//   padding-right: 5px !important;
+//   @media (max-width: 578px) {
+//     padding: 15px;
+//     margin: 15px;
+//   }
+// }
 
 .carousel {
   .carousel-inner {
@@ -391,5 +391,71 @@ body {
     /* background-position: 100% 100%; */
     /* background-size: cover; */
     /* background-repeat: no-repeat; */
+  }
+}
+
+#contact-form-group {
+  input, button, textarea {
+    outline: none;
+    border: 0px;
+    font-size: 1rem;
+  }
+  #contact-form-group--form {
+    .form-item {
+      position: relative;
+      label {
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        z-index: 1 !important;
+        transition: ease .5s all;        
+        padding: 5px 10px;
+        white-space: nowrap;
+        font-size: .9rem;
+        color: #999;
+        @media (max-width: 1300px) {
+          font-size: .8rem;
+        }
+        &:hover {
+          cursor: text;
+        }
+      }
+      input, textarea {
+        border-bottom: 1px solid rgb(209, 209, 209);
+        width: 100%;
+        padding: 15px 15px;
+        transition: ease .5s;
+        z-index: 5 !important;
+        pointer-events: inherit;
+        &:focus {
+          border: 1px solid $main-color;
+          border-radius: 5px;
+          transition-delay: .3s;
+          ~ label {
+            transition-delay: .1s;
+            color: $main-color !important;
+            top: 0 !important;
+            z-index: 4 !important;
+            background: #fff;
+            font-weight: bold;
+            @media (max-width: 1300px) {
+              margin: 0 25px;
+            }
+          }
+        }
+      }
+      textarea {
+        width: 100%;
+        max-width: 100%;
+        height: 200px;
+        resize: none;
+        ~ label {
+          top: 20%;
+          left: 20%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
   }
 }
