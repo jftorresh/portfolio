@@ -9,7 +9,7 @@ mixin carouselItem-active(label, title, text, url, img)
         p= text
         a.btn.btn-main(href= url) Explorar Proyecto
       .col-md-6
-        img.img.img-fluid.w-100.vh-80-important(src=`./dist/media/img/${img}`)
+        img.img.img-fluid.w-100.h-auto(src=`./dist/media/img/${img}` style="max-height: 80vh;")
 
 //- Item
 mixin carouselItem(label, title, text, url, img)
@@ -22,7 +22,7 @@ mixin carouselItem(label, title, text, url, img)
         p= text
         a.btn.btn-main(href= url) Explorar Proyecto
       .col-md-6
-        img.img.img-fluid.w-100.vh-80-important(src=`./dist/media/img/${img}`)
+        img.img.img-fluid.w-100.h-auto(src=`./dist/media/img/${img}` style="max-height: 80vh;")
 
 //- Indicators Active
 mixin carouselIndicator-active(number)
