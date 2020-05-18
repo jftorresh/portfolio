@@ -8,26 +8,28 @@ block main_content
         .offset-lg-1.col-lg-10.col-12
           .row
             .offset-md-1.col-md-3.d-flex.jc-start.ai-end
-              div
+              div.d-flex.ai-center.h-100
                 .row
                   .col-12
                     +infoLight(
-                      "Lorem ipsum",
-                      "ipsum eius eveniet",
-                      "nam inventore cum",
-                      "dolores velit earum"
+                      "Contacto",
+                      "+1 123 456 7890",
+                      "+2 098 765 4321",
+                      ""
                     )
                   .col-12
                     +infoLight(
-                      "Lorem ipsum",
-                      "ipsum eius eveniet",
-                      "nam inventore cum",
-                      "dolores velit earum"
+                      "Oficina",
+                      "4903 Mayo Street",
+                      "Cincinati, KY 45202",
+                      "U.S.A"
                     )
             .col-md-4.bg-gray-light.p-0.m-0.d-flex.ai-end
               img.img.img-fluid(src="./dist/media/photos/profile_8-png.png")
             .col-md-4.d-flex.ai-center.p-md-5#contact-form-group
               form#contact-form-group--form.w-100(action="https://formspree.io/maypndqj" method="POST" autocomplete="off")
+                .col-12.text-center.text-md-left
+                  h2.display-4 Contactar
                 .form-item.mt-3
                   input#name(type="text" name="name" required)
                   label(for="name") Nombre Completo:
@@ -38,7 +40,7 @@ block main_content
                   textarea#message(name="message" required)
                   label(for="message") Tu mensaje:
                 .form-item.mt-3
-                  button.btn.btn-main#btn-submit(type="submit") Enviar
+                  button.btn.btn-main#btn-submit(type="submit") Enviar Mensaje
                       
                     
 //- block foot

@@ -2,14 +2,20 @@ mixin infoDark(title, li1, li2, li3)
   h5= title
   .sub-dark
   ul.list-unstyled.text-left.pt-4
-    li= li1
-    li= li2
-    li= li3
+    li
+      p.mb-0= li1
+    li
+      p.mb-0= li2
+    li
+      p.mb-0= li3
 
 mixin infoLight(title, li1, li2, li3)
   h5= title
   .sub-dark
-  ul.list-unstyled.text-left.pt-4
-    li= li1
-    li= li2
-    li= li3
+  ul.list-unstyled.text-left.pt-4.ml-2
+    li
+      p.mb-0= li1
+    li
+      p.mb-0= li2
+    li
+      p.mb-0= li3
